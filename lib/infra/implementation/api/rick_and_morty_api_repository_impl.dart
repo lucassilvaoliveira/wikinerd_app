@@ -1,4 +1,4 @@
-import 'package:multiple_result/src/result.dart';
+import 'package:multiple_result/multiple_result.dart';
 import 'package:wikinerd/infra/interface/i_repository.dart';
 
 class RickAndMortyApiRepositoryImpl<RickAndMortyCharacter, ApiException> implements IRepository<RickAndMortyCharacter, ApiException> {
