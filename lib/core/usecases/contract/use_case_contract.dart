@@ -1,4 +1,3 @@
-import 'package:multiple_result/multiple_result.dart';
 import 'package:wikinerd/infra/interface/i_repository.dart';
 
 abstract class UseCaseContract<T, E> {
@@ -6,5 +5,5 @@ abstract class UseCaseContract<T, E> {
 
   UseCaseContract({required this.repository});
 
-  Future<Result<T, E>> call();
+  Future call({required String? id});
 }

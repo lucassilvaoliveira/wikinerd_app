@@ -5,9 +5,7 @@ class GetUseCaseContract<T, E> extends UseCaseContract<T, E> {
   GetUseCaseContract({required super.repository});
 
   @override
-  Future<Result<T, E>> call() {
-    // TODO: implement call
-    throw UnimplementedError();
+  Future<Result<List<T>, E>> call({required String? id}) async {
+    return repository.get(id: id);
   }
-
 }
