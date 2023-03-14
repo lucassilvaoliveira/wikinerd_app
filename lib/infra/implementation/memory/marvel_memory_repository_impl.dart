@@ -19,7 +19,7 @@ class MarvelMemoryRepositoryImpl implements IRepository<MarvelCharacter, Charact
         MarvelCharacter(imageUrl: "imageUrl", id: uuid.v4(), name: "hulk")
       ];
       return Success(characters);
-    } catch (e) {
+    } on CharacterException catch (e) {
       return Error(CharacterException(cause: e.toString()));
     }
   }

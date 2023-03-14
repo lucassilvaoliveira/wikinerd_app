@@ -18,7 +18,7 @@ class StarWarsMemoryRepositoryImpl implements IRepository<StarWarsCharacter, Cha
         StarWarsCharacter(imageUrl: "imageUrl", id: uuid.v4(), name: "luky skywalker"),
       ];
       return Success(characters);
-    } catch (e) {
+    } on CharacterException catch (e) {
       return Error(CharacterException(cause: e.toString()));
     }
   }

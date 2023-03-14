@@ -18,7 +18,7 @@ class RickAndMortyMemoryRepositoryImpl implements IRepository<RickAndMortyCharac
         RickAndMortyCharacter(planet: "C137", id: uuid.v4(), name: "morty"),
       ];
       return Success(characters);
-    } catch (e) {
+    } on CharacterException catch (e) {
       return Error(CharacterException(cause: e.toString()));
     }
   }
