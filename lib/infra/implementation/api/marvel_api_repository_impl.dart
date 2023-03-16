@@ -7,9 +7,4 @@ class MarvelApiRepositoryImpl<MarvelCharacter, ApiException> implements IReposit
     // TODO: implement get
     throw UnimplementedError();
   }
-  
-
-  
-  
-
 }

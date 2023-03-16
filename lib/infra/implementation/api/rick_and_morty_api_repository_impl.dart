@@ -7,9 +7,4 @@ class RickAndMortyApiRepositoryImpl<RickAndMortyCharacter, ApiException> impleme
     // TODO: implement get
     throw UnimplementedError();
   }
- 
-
-  
-
-  
 }

@@ -1,4 +1,3 @@
-
 import 'package:multiple_result/multiple_result.dart';
 import 'package:wikinerd/core/entities/marvel_character.dart';
 import 'package:wikinerd/core/exceptions/character/character_exception.dart';
