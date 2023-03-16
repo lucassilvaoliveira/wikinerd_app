@@ -22,17 +22,17 @@ class ChooseThemeController extends ChangeNotifier {
     {
       "theme": "star wars",
       "title": "Star wars",
-      "subtitle": "bklalvbalkdasopkeodakopkpaeda",
+      "subtitle": "A trama se passa num passado distante, em uma galáxia repleta de planetas habitados por diferentes povos e espécies. Apesar de ter como fundo a ficção científica, Star Wars é, na verdade, uma saga de fantasia, recheada de toques de humor, drama, romance e, claro, o tema central: a luta entre o bem e o mal",
       "imagePath": "assets/star wars.jpg"
     }
   ];
 
-  changeCurrentPage({required int value}) {
+  void changeCurrentPage({required int value}) {
     currentPage = value;
     notifyListeners();
   }
 
-  setUpScrolling() {
+  void setUpScrolling() {
     isUpScrolling = !isUpScrolling;
     notifyListeners();
   }
